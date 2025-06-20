@@ -1,0 +1,18 @@
+<svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+  </defs>
+  <text x="0" y="25" font-family="Arial" font-size="24" font-weight="bold" fill="url(#logoGradient)">Wanderlust</text>
+  <path d="M140,20 C140,14 135,10 130,10 C125,10 120,14 120,20 C120,26 125,30 130,30 C135,30 140,26 140,20 Z" fill="none" stroke="#3498db" stroke-width="1.5" />
+  <path d="M130,10 L130,6" stroke="#3498db" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M130,34 L130,30" stroke="#3498db" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M120,20 L116,20" stroke="#3498db" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M144,20 L140,20" stroke="#3498db" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M137,13 L134,16" stroke="#3498db" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M126,24 L123,27" stroke="#3498db" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M137,27 L134,24" stroke="#3498db" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M126,16 L123,13" stroke="#3498db" stroke-width="1.5" stroke-linecap="round" />
+</svg>

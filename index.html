@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust - Explore the World</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="150" height="40" viewBox="0 0 150 40" class="logo-svg">
+              <text
+                x="0"
+                y="25"
+                font-family="Arial"
+                font-size="24"
+                font-weight="bold"
+                fill="#3498db"
+              >
+                Wanderlust
+              </text>
+            </svg>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: url('assets/images/front.jpg')">
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore the world's most exotic destinations with Wanderlust</p>
+            <div class="search-bar">
+                <input type="text" id="destination-search" placeholder="Search destinations..." />
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </section>
+
+    <section class="featured-destinations">
+        <div class="container">
+            <h2 class="section-title">Featured Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('assets/images/bali.jpg')">
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>
+                            Experience the perfect blend of beaches, culture, and luxury
+                        </p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Indonesia</span>
+                            <span><i class="fas fa-calendar-alt"></i> 7-14 days</span>
+                        </div>
+                        <a href="#" class="btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('assets/images/santorini.jpg')">
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Santorini, Greece</h3>
+                        <p>
+                            Stunning sunsets and whitewashed architecture along the Aegean Sea
+                        </p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Greece</span>
+                            <span><i class="fas fa-calendar-alt"></i> 5-10 days</span>
+                        </div>
+                        <a href="#" class="btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('assets/images/kyoto.jpg')">
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Kyoto, Japan</h3>
+                        <p>Ancient temples, traditional gardens, and vibrant festivals</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Japan</span>
+                            <span><i class="fas fa-calendar-alt"></i> 7-12 days</span>
+                        </div>
+                        <a href="#" class="btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-img" style="background-image: url('assets/images/maldives.jpg')">
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Maldives</h3>
+                        <p>
+                            Pristine beaches, crystal clear waters, and overwater bungalows
+                        </p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Maldives</span>
+                            <span><i class="fas fa-calendar-alt"></i> 5-10 days</span>
+                        </div>
+                        <a href="#" class="btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <a href="destinations.html" class="btn-secondary">View All Destinations</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section">
+      <div class="container">
+        <div class="experience-content">
+          <h2>Experience Travel Like Never Before</h2>
+          <p>
+            At Wanderlust, we believe in creating unforgettable travel memories
+            that last a lifetime. Our carefully curated travel packages are
+            designed to give you the perfect balance of adventure, relaxation,
+            and cultural immersion.
+          </p>
+          <div class="experience-features">
+            <div class="feature">
+              <i class="fas fa-globe-americas"></i>
+              <h3>Exotic Destinations</h3>
+              <p>Explore the world's most beautiful and unique locations</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-hotel"></i>
+              <h3>Luxury Accommodations</h3>
+              <p>Stay in handpicked, premium hotels and resorts</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-hiking"></i>
+              <h3>Adventure Activities</h3>
+              <p>Experience thrilling adventures tailored to your interests</p>
+            </div>
+          </div>
+          <a href="about.html" class="btn-primary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Travelers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p>
+                            "My trip to Bali with Wanderlust was absolutely perfect. The itinerary was well-planned, the accommodations were luxurious, and the local guides were knowledgeable and friendly. I couldn't have asked for a better experience!"
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>Sarah Johnson</h4>
+                            <span>Traveled to Bali</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>
+                            "The Santorini package exceeded all my expectations. From the breathtaking views to the private yacht tour, everything was meticulously arranged. Wanderlust truly knows how to create magical travel experiences."
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>Michael Chen</h4>
+                            <span>Traveled to Santorini</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>
+                            "Our family trip to Japan was the adventure of a lifetime! The cultural experiences were authentic, and the itinerary was perfectly paced for our children. We'll definitely be booking with Wanderlust again."
+                        </p>
+                        <div class="testimonial-author">
+                            <h4>The Rodriguez Family</h4>
+                            <span>Traveled to Japan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+                <div class="testimonial-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+                <button class="next-testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>
+                    Get exclusive travel deals, insider tips, and travel inspiration delivered straight to your inbox.
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required />
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg width="150" height="40" viewBox="0 0 150 40">
+                <text
+                  x="0"
+                  y="25"
+                  font-family="Arial"
+                  font-size="24"
+                  font-weight="bold"
+                  fill="#3498db"
+                >
+                  Wanderlust
+                </text>
+              </svg>
+                    </div>
+                    <p>
+                        Exploring the world's most breathtaking destinations since 2010.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Destinations</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Bali, Indonesia</a>
+                        </li>
+                        <li>
+                            <a href="#">Santorini, Greece</a>
+                        </li>
+                        <li>
+                            <a href="#">Kyoto, Japan</a>
+                        </li>
+                        <li>
+                            <a href="#">Maldives</a>
+                        </li>
+                        <li><a href="destinations.html">View All</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> 123 Travel Street, City, Country
+                        </li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@wanderlust.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

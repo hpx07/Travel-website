@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations - Wanderlust</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <svg width="150" height="40" viewBox="0 0 150 40" class="logo-svg">
+              <text
+                x="0"
+                y="25"
+                font-family="Arial"
+                font-size="24"
+                font-weight="bold"
+                fill="#3498db"
+              >
+                Wanderlust
+              </text>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html" class="active">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="page-banner"
+      style="background-image: url('assets/images/explore.jpg')"
+    >
+      <div class="banner-content">
+        <h1>Explore Our Destinations</h1>
+        <p>Discover the world's most breathtaking locations</p>
+      </div>
+    </section>
+
+    <section class="destination-filters">
+      <div class="container">
+        <div class="filter-options">
+          <div class="filter-group">
+            <label for="region-filter">Region</label>
+            <select id="region-filter">
+              <option value="all">All Regions</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="africa">Africa</option>
+              <option value="north-america">North America</option>
+              <option value="south-america">South America</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="activity-filter">Activity Type</label>
+            <select id="activity-filter">
+              <option value="all">All Activities</option>
+              <option value="beach">Beach</option>
+              <option value="adventure">Adventure</option>
+              <option value="cultural">Cultural</option>
+              <option value="urban">Urban</option>
+              <option value="nature">Nature</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="duration-filter">Duration</label>
+            <select id="duration-filter">
+              <option value="all">All Durations</option>
+              <option value="short">Short Trip (1-3 days)</option>
+              <option value="medium">Medium Trip (4-7 days)</option>
+              <option value="long">Long Trip (8-14 days)</option>
+              <option value="extended">Extended Trip (15+ days)</option>
+            </select>
+          </div>
+          <button id="apply-filters" class="btn-primary">Apply Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="all-destinations">
+      <div class="container">
+        <div class="destinations-grid">
+          <!-- Asia -->
+          <div
+            class="destination-card"
+            data-region="asia"
+            data-activity="beach,adventure,cultural"
+            data-duration="medium,long"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/bali.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Bali, Indonesia</h3>
+              <p>
+                Experience the perfect blend of beaches, culture, and luxury
+              </p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Indonesia</span>
+                <span><i class="fas fa-calendar-alt"></i> 7-14 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <div
+            class="destination-card"
+            data-region="asia"
+            data-activity="cultural,urban,nature"
+            data-duration="medium,long"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/Kyoto.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Kyoto, Japan</h3>
+              <p>Ancient temples, traditional gardens, and vibrant festivals</p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Japan</span>
+                <span><i class="fas fa-calendar-alt"></i> 7-12 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <div
+            class="destination-card"
+            data-region="asia"
+            data-activity="beach,adventure"
+            data-duration="short,medium"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/phuket.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Phuket, Thailand</h3>
+              <p>
+                Thailand's largest island with stunning beaches and nightlife
+              </p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Thailand</span>
+                <span><i class="fas fa-calendar-alt"></i> 5-10 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <!-- Europe -->
+          <div
+            class="destination-card"
+            data-region="europe"
+            data-activity="beach,cultural"
+            data-duration="short,medium"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/Santorini.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Santorini, Greece</h3>
+              <p>
+                Stunning sunsets and whitewashed architecture along the Aegean
+                Sea
+              </p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Greece</span>
+                <span><i class="fas fa-calendar-alt"></i> 5-10 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <div
+            class="destination-card"
+            data-region="europe"
+            data-activity="cultural,urban"
+            data-duration="short,medium"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/paris.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Paris, France</h3>
+              <p>
+                The city of lights with iconic landmarks and romantic ambiance
+              </p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> France</span>
+                <span><i class="fas fa-calendar-alt"></i> 3-7 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <div
+            class="destination-card"
+            data-region="europe"
+            data-activity="cultural,adventure,nature"
+            data-duration="medium"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/iceland.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Iceland</h3>
+              <p>
+                Land of fire and ice with waterfalls, volcanoes, and northern
+                lights
+              </p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Iceland</span>
+                <span><i class="fas fa-calendar-alt"></i> 7-10 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <!-- Africa -->
+          <div
+            class="destination-card"
+            data-region="africa"
+            data-activity="adventure,nature"
+            data-duration="medium,long"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/Serengeti.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Serengeti, Tanzania</h3>
+              <p>Witness the great migration and incredible wildlife</p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Tanzania</span>
+                <span><i class="fas fa-calendar-alt"></i> 7-14 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <!-- Oceania -->
+          <div
+            class="destination-card"
+            data-region="oceania"
+            data-activity="beach,adventure"
+            data-duration="medium"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/fiji.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Fiji Islands</h3>
+              <p>
+                Paradise islands with crystal clear waters and friendly locals
+              </p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Fiji</span>
+                <span><i class="fas fa-calendar-alt"></i> 7-10 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <!-- North America -->
+          <div
+            class="destination-card"
+            data-region="north-america"
+            data-activity="adventure,nature"
+            data-duration="medium"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/yellowstone.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Yellowstone National Park, USA</h3>
+              <p>
+                America's first national park with geysers and diverse wildlife
+              </p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> USA</span>
+                <span><i class="fas fa-calendar-alt"></i> 5-7 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <!-- South America -->
+          <div
+            class="destination-card"
+            data-region="south-america"
+            data-activity="adventure,cultural,nature"
+            data-duration="long"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/machu.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Machu Picchu, Peru</h3>
+              <p>Ancient Incan citadel set against a backdrop of mountains</p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Peru</span>
+                <span><i class="fas fa-calendar-alt"></i> 10-14 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+
+          <!-- Indian Ocean -->
+          <div
+            class="destination-card"
+            data-region="asia"
+            data-activity="beach,luxury"
+            data-duration="medium"
+          >
+            <div
+              class="destination-img"
+              style="background-image: url('assets/images/maldives.jpg')"
+            >
+              <div class="destination-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <div class="destination-info">
+              <h3>Maldives</h3>
+              <p>
+                Pristine beaches, crystal clear waters, and overwater bungalows
+              </p>
+              <div class="destination-meta">
+                <span><i class="fas fa-map-marker-alt"></i> Maldives</span>
+                <span><i class="fas fa-calendar-alt"></i> 5-10 days</span>
+              </div>
+              <a href="#" class="btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="featured-promotion"
+      style="background-image: url('assets/images/trip.jpg')"
+    >
+      <div class="container">
+        <div class="promotion-content">
+          <h2>Plan Your Perfect Trip</h2>
+          <p>
+            Our travel experts can help you create a customized itinerary based
+            on your interests, budget, and preferred travel style.
+          </p>
+          <a href="contact.html" class="btn-primary">Contact Us Today</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <svg width="150" height="40" viewBox="0 0 150 40">
+                <text
+                  x="0"
+                  y="25"
+                  font-family="Arial"
+                  font-size="24"
+                  font-weight="bold"
+                  fill="#3498db"
+                >
+                  Wanderlust
+                </text>
+              </svg>
+            </div>
+            <p>
+              Exploring the world's most breathtaking destinations since 2010.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Destinations</h3>
+            <ul>
+              <li><a href="#">Bali, Indonesia</a></li>
+              <li><a href="#">Santorini, Greece</a></li>
+              <li>
+                <a href="#">Kyoto, Japan</a>
+              </li>
+              <li><a href="#">Maldives</a></li>
+              <li><a href="destinations.html">View All</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Travel Street, City,
+                Country
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@wanderlust.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Destination filtering functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const applyFiltersBtn = document.getElementById("apply-filters");
+        const destinationCards = document.querySelectorAll(".destination-card");
+
+        applyFiltersBtn.addEventListener("click", function () {
+          const regionFilter = document.getElementById("region-filter").value;
+          const activityFilter =
+            document.getElementById("activity-filter").value;
+          const durationFilter =
+            document.getElementById("duration-filter").value;
+
+          destinationCards.forEach((card) => {
+            let showCard = true;
+
+            // Region filtering
+            if (
+              regionFilter !== "all" &&
+              !card.dataset.region.includes(regionFilter)
+            ) {
+              showCard = false;
+            }
+
+            // Activity filtering
+            if (
+              activityFilter !== "all" &&
+              !card.dataset.activity.includes(activityFilter)
+            ) {
+              showCard = false;
+            }
+
+            // Duration filtering
+            if (
+              durationFilter !== "all" &&
+              !card.dataset.duration.includes(durationFilter)
+            ) {
+              showCard = false;
+            }
+
+            if (showCard) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
