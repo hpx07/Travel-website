@@ -1,4 +1,3 @@
-# Travel-website
-
+<h1>Travel Website</h1>
 #Live Website
-website is live at - https://hpx07.github.io/Travel-website/
+Website is live at - https://hpx07.github.io/Travel-website/
