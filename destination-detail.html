@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Details - Wanderlust</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <svg width="150" height="40" viewBox="0 0 150 40" class="logo-svg">
+              <text
+                x="0"
+                y="25"
+                font-family="Arial"
+                font-size="24"
+                font-weight="bold"
+                fill="#3498db"
+              >
+                Wanderlust
+              </text>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html" class="active">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="destination-header">
+      <div class="destination-banner" id="destination-banner">
+        <!-- Banner image will be set by JavaScript -->
+      </div>
+      <div class="destination-title-container">
+        <div class="container">
+          <h1 id="destination-title">Loading destination...</h1>
+          <div class="destination-meta">
+            <span id="destination-location"
+              ><i class="fas fa-map-marker-alt"></i> Location</span
+            >
+            <span id="destination-duration"
+              ><i class="fas fa-calendar-alt"></i> Duration</span
+            >
+            <div class="destination-rating" id="destination-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination-nav">
+      <div class="container">
+        <nav class="destination-tabs">
+          <ul>
+            <li><a href="#overview" class="active">Overview</a></li>
+            <li><a href="#itinerary">Itinerary</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#accommodations">Accommodations</a></li>
+            <li><a href="#gallery">Photos</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section id="overview" class="destination-section active-section">
+      <div class="container">
+        <div class="destination-overview">
+          <div class="overview-content">
+            <h2>Destination Overview</h2>
+            <div id="destination-description">
+              <p>Loading destination description...</p>
+            </div>
+            <div class="overview-features" id="overview-features">
+              <!-- Features will be populated by JavaScript -->
+            </div>
+          </div>
+          <div class="overview-sidebar">
+            <div class="booking-card">
+              <h3>Book This Trip</h3>
+              <div class="price-container">
+                <span class="price-from">From</span>
+                <span class="price" id="destination-price">$0</span>
+                <span class="price-per">per person</span>
+              </div>
+              <div class="booking-features">
+                <div class="booking-feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Best price guaranteed</span>
+                </div>
+                <div class="booking-feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>No booking fees</span>
+                </div>
+                <div class="booking-feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>24/7 customer support</span>
+                </div>
+              </div>
+              <a href="contact.html" class="btn-primary btn-block">Book Now</a>
+              <a href="contact.html" class="btn-secondary btn-block"
+                >Inquire More</a
+              >
+            </div>
+            <div class="weather-widget">
+              <h3>Weather Information</h3>
+              <div class="weather-info" id="weather-info">
+                <!-- Weather info will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="itinerary" class="destination-section">
+      <div class="container">
+        <h2>Recommended Itinerary</h2>
+        <div class="itinerary-container" id="itinerary-container">
+          <!-- Itinerary will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="destination-section">
+      <div class="container">
+        <h2>Destination Highlights</h2>
+        <div class="highlights-grid" id="highlights-grid">
+          <!-- Highlights will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="accommodations" class="destination-section">
+      <div class="container">
+        <h2>Where to Stay</h2>
+        <div class="accommodations-grid" id="accommodations-grid">
+          <!-- Accommodations will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="destination-section">
+      <div class="container">
+        <h2>Photo Gallery</h2>
+        <div class="destination-gallery" id="destination-gallery">
+          <!-- Gallery will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="destination-section">
+      <div class="container">
+        <h2>Traveler Reviews</h2>
+        <div class="review-summary">
+          <div class="review-average">
+            <span class="average-rating" id="average-rating">4.5</span>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="total-reviews" id="total-reviews">125 reviews</span>
+          </div>
+          <div class="rating-breakdown">
+            <div class="rating-bar">
+              <span class="rating-level">5 Stars</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+              </div>
+              <span class="rating-percent">75%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="rating-level">4 Stars</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 15%"></div>
+              </div>
+              <span class="rating-percent">15%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="rating-level">3 Stars</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 7%"></div>
+              </div>
+              <span class="rating-percent">7%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="rating-level">2 Stars</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 2%"></div>
+              </div>
+              <span class="rating-percent">2%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="rating-level">1 Star</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 1%"></div>
+              </div>
+              <span class="rating-percent">1%</span>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-list" id="reviews-list">
+          <!-- Reviews will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section class="related-destinations">
+      <div class="container">
+        <h2>You Might Also Like</h2>
+        <div class="related-destinations-grid" id="related-destinations">
+          <!-- Related destinations will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="cta-banner"
+      style="background-image: url('assets/images/maldives.jpg')"
+    >
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Experience This Destination?</h2>
+          <p>
+            Our travel experts are ready to help you plan your perfect trip.
+          </p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary">Book Now</a>
+            <a href="contact.html" class="btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <svg width="150" height="40" viewBox="0 0 150 40">
+                <text
+                  x="0"
+                  y="25"
+                  font-family="Arial"
+                  font-size="24"
+                  font-weight="bold"
+                  fill="#3498db"
+                >
+                  Wanderlust
+                </text>
+              </svg>
+            </div>
+            <p>
+              Exploring the world's most breathtaking destinations since 2010.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Destinations</h3>
+            <ul>
+              <li>
+                <a href="destination-detail.html?destination=bali"
+                  >Bali, Indonesia</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=santorini"
+                  >Santorini, Greece</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=kyoto"
+                  >Kyoto, Japan</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=maldives"
+                  >Maldives</a
+                >
+              </li>
+              <li><a href="destinations.html">View All</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Travel Street, City,
+                Country
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@wanderlust.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get destination from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const destinationParam = urlParams.get('destination');
+
+            // Destination data (in a real application, this would come from a server/API)
+            const destinationData = {
+                'bali': {
+                    title: 'Bali, Indonesia',
+                    location: 'Indonesia',
+                    duration: '7-14 days',
+                    rating: 4.5,
+                    price: '$1,299',
+                    banner: 'assets/images/bali.jpg',
+                    description: `
+              <p>Bali is a living postcard, an Indonesian paradise that feels like a fantasy. Soak up the sun on a stretch of fine white sand, or commune with the tropical creatures as you dive along coral ridges or the colorful wreck of a WWII war ship.</p>
+              <p>On shore, the lush jungle shelters stone temples and mischievous monkeys. The "artistic capital" of Ubud is the perfect place to see a cultural dance performance, take a batik or silver-smithing workshop, or invigorate your mind and body in a yoga class.</p>
+          `,
+                    features: [{
+                        icon: 'umbrella-beach',
+                        text: 'Beautiful beaches'
+                    }, {
+                        icon: 'mountain',
+                        text: 'Volcanic mountains'
+                    }, {
+                        icon: 'water',
+                        text: 'Rice terraces'
+                    }, {
+                        icon: 'pray',
+                        text: 'Cultural immersion'
+                    }, {
+                        icon: 'utensils',
+                        text: 'Excellent cuisine'
+                    }, {
+                        icon: 'spa',
+                        text: 'Spa retreats'
+                    }],
+                    weather: [{
+                        month: 'Jan-Mar',
+                        temp: '26-30°C',
+                        rain: 'High'
+                    }, {
+                        month: 'Apr-Jun',
+                        temp: '27-31°C',
+                        rain: 'Medium'
+                    }, {
+                        month: 'Jul-Sep',
+                        temp: '25-29°C',
+                        rain: 'Low'
+                    }, {
+                        month: 'Oct-Dec',
+                        temp: '26-30°C',
+                        rain: 'High'
+                    }],
+                    itinerary: [{
+                        day: 'Day 1-3',
+                        title: 'Seminyak & Kuta',
+                        description: 'Arrive in Bali and explore the bustling beach areas of Seminyak and Kuta. Enjoy the sunset, beach clubs, and shopping.',
+                        image: 'https://source.unsplash.com/800x600/?seminyak'
+                    }, {
+                        day: 'Day 4-6',
+                        title: 'Ubud',
+                        description: 'Move to the cultural heart of Bali. Visit the Monkey Forest, rice terraces, and take part in a traditional cooking class.',
+                        image: 'https://source.unsplash.com/800x600/?ubud'
+                    }, {
+                        day: 'Day 7-9',
+                        title: 'Nusa Islands',
+                        description: 'Explore Nusa Penida, Nusa Lembongan, and Nusa Ceningan. Witness the stunning coastal cliffs and blue lagoons.',
+                        image: 'https://source.unsplash.com/800x600/?nusa-penida'
+                    }, {
+                        day: 'Day 10-12',
+                        title: 'Northern Bali',
+                        description: 'Visit the northern coast including Lovina for dolphin watching and the mountain regions with hot springs and lakes.',
+                        image: 'https://source.unsplash.com/800x600/?bali-mountains'
+                    }, {
+                        day: 'Day 13-14',
+                        title: 'Uluwatu & Departure',
+                        description: 'Explore the clifftop temple of Uluwatu, enjoy a traditional Kecak dance, and prepare for departure.',
+                        image: 'https://source.unsplash.com/800x600/?uluwatu'
+                    }],
+                    highlights: [{
+                        title: 'Sacred Monkey Forest',
+                        description: 'A natural habitat for Balinese long-tailed monkeys with over 700 monkeys and 186 species of plants.',
+                        image: 'https://source.unsplash.com/800x600/?monkey-forest'
+                    }, {
+                        title: 'Tegallalang Rice Terraces',
+                        description: 'Famous for its beautiful scenes of rice paddies involving the traditional Balinese irrigation system.',
+                        image: 'https://source.unsplash.com/800x600/?rice-terraces'
+                    }, {
+                        title: 'Mount Batur Sunrise Trek',
+                        description: 'An active volcano offering one of the most stunning sunrise views in Bali.',
+                        image: 'https://source.unsplash.com/800x600/?mount-batur'
+                    }, {
+                        title: 'Tanah Lot Temple',
+                        description: 'One of Bali'
+                        s most important landmarks,
+                        a temple located on a rock formation in the sea.
+                        ',
+                        image: 'https://source.unsplash.com/800x600/?tanah-lot'
+                    }],
+                    accommodations: [{
+                        name: 'Four Seasons Resort Bali at Sayan',
+                        description: 'Luxury resort with villas overlooking the Ayung River Valley',
+                        price: '$$$',
+                        rating: 5,
+                        image: 'https://source.unsplash.com/800x600/?luxury-resort-bali'
+                    }, {
+                        name: 'Alila Villas Uluwatu',
+                        description: 'Contemporary clifftop resort with stunning ocean views',
+                        price: '$$$',
+                        rating: 5,
+                        image: 'https://source.unsplash.com/800x600/?clifftop-resort-bali'
+                    }, {
+                        name: 'Maya Ubud Resort & Spa',
+                        description: 'Peaceful resort surrounded by rainforest and rice fields',
+                        price: '$$',
+                        rating: 4.5,
+                        image: 'https://source.unsplash.com/800x600/?ubud-resort'
+                    }, {
+                        name: 'The Samaya Seminyak',
+                        description: 'Beachfront villas with private pools in the heart of Seminyak',
+                        price: '$$$',
+                        rating: 4.5,
+                        image: 'https://source.unsplash.com/800x600/?seminyak-resort'
+                    }],
+                    gallery: [
+                        'https://source.unsplash.com/800x600/?bali-beach',
+                        'https://source.unsplash.com/800x600/?bali-temple',
+                        'https://source.unsplash.com/800x600/?bali-waterfall',
+                        'https://source.unsplash.com/800x600/?bali-resort',
+                        'https://source.unsplash.com/800x600/?bali-food',
+                        'https://source.unsplash.com/800x600/?bali-dance'
+                    ],
+                    reviews: [{
+                        name: 'James Wilson',
+                        date: 'October 10, 2025',
+                        rating: 5,
+                        comment: 'Bali was everything I hoped for and more. The beaches were pristine, the temples were captivating, and the local culture was fascinating. I particularly enjoyed the cooking class we took in Ubud.'
+                    }, {
+                        name: 'Emma Thompson',
+                        date: 'September 5, 2025',
+                        rating: 4,
+                        comment: 'We had a wonderful time in Bali. The only drawback was the traffic, especially in Kuta and Seminyak. But the beauty of the rice terraces and the kindness of the Balinese people more than made up for it.'
+                    }, {
+                        name: 'Liu Wei',
+                        date: 'August 22, 2025',
+                        rating: 5,
+                        comment: 'The perfect honeymoon destination! The private villa we stayed at in Ubud was magical, with views of the jungle and our own infinity pool. The Mount Batur sunrise trek was challenging but absolutely worth it.'
+                    }],
+                    related: ['santorini', 'maldives', 'phuket']
+                },
+                'santorini': {
+                    title: 'Santorini, Greece',
+                    location: 'Greece',
+                    duration: '5-10 days',
+                    rating: 5,
+                    price: '$1,599',
+                    banner: 'https://source.unsplash.com/1600x900/?santorini',
+                    description: `
+              <p>Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape. The whitewashed, cubiform houses of its 2 principal towns, Fira and Oia, cling to cliffs above an underwater caldera (crater).</p>
+              <p>They overlook the sea, small islands to the west and beaches made up of black, red and white lava pebbles. Santorini is considered to be the most sought after place for a romantic getaway in Greece, since there are not many places in the world where you can enjoy exquisitely clear waters while perched on the rim of a massive active volcano in the middle of the sea.</p>
+          `,
+                    features: [{
+                        icon: 'mountain',
+                        text: 'Volcanic landscape'
+                    }, {
+                        icon: 'sun',
+                        text: 'Spectacular sunsets'
+                    }, {
+                        icon: 'building',
+                        text: 'Whitewashed architecture'
+                    }, {
+                        icon: 'wine-glass',
+                        text: 'Local vineyards'
+                    }, {
+                        icon: 'umbrella-beach',
+                        text: 'Unique beaches'
+                    }, {
+                        icon: 'ship',
+                        text: 'Caldera cruises'
+                    }],
+                    weather: [{
+                        month: 'Jan-Mar',
+                        temp: '10-15°C',
+                        rain: 'Medium'
+                    }, {
+                        month: 'Apr-Jun',
+                        temp: '15-25°C',
+                        rain: 'Low'
+                    }, {
+                        month: 'Jul-Sep',
+                        temp: '23-29°C',
+                        rain: 'Very Low'
+                    }, {
+                        month: 'Oct-Dec',
+                        temp: '14-20°C',
+                        rain: 'Medium'
+                    }],
+                    itinerary: [{
+                        day: 'Day 1-2',
+                        title: 'Fira',
+                        description: 'Arrive in Santorini and explore Fira, the island'
+                        s capital.Visit the Museum of Prehistoric Thera and enjoy the bustling town center.
+                        ',
+                        image: 'https://source.unsplash.com/800x600/?fira'
+                    }, {
+                        day: 'Day 3-4',
+                        title: 'Oia',
+                        description: 'Discover the iconic village of Oia, famous for its sunset views and blue-domed churches. Explore the narrow streets and art galleries.',
+                        image: 'https://source.unsplash.com/800x600/?oia'
+                    }, {
+                        day: 'Day 5-6',
+                        title: 'Beaches & Wine Tasting',
+                        description: 'Visit the unique colored beaches of Santorini - Red Beach, Black Beach, and White Beach. Take a wine tour of the island'
+                        s vineyards.
+                        ',
+                        image: 'https://source.unsplash.com/800x600/?santorini-beach'
+                    }, {
+                        day: 'Day 7-8',
+                        title: 'Caldera Cruise',
+                        description: 'Sail around the caldera, visit the volcanic hot springs, and enjoy a day on the water. Visit the small islands of Thirassia and Nea Kameni.',
+                        image: 'https://source.unsplash.com/800x600/?santorini-caldera'
+                    }, {
+                        day: 'Day 9-10',
+                        title: 'Akrotiri & Departure',
+                        description: 'Explore the ancient site of Akrotiri, a prehistoric settlement preserved under volcanic ash. Final shopping and departure.',
+                        image: 'https://source.unsplash.com/800x600/?akrotiri'
+                    }],
+                    // Additional data would be here for highlights, accommodations, gallery, reviews, etc.
+                    // Similar to the Bali example
+                    related: ['bali', 'maldives', 'paris']
+                },
+                // Additional destinations would be included here following the same structure
+                'kyoto': {
+                    title: 'Kyoto, Japan',
+                    location: 'Japan',
+                    duration: '7-12 days',
+                    rating: 5,
+                    price: '$1,899',
+                    banner: 'https://source.unsplash.com/1600x900/?kyoto',
+                    description: `
+              <p>Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its numerous classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses.</p>
+              <p>It's also known for formal traditions such as kaiseki dining, consisting of multiple courses of precise dishes, and geisha, female entertainers often found in the Gion district.</p>
+          `,
+                    // Additional data would be included following the same structure
+                    related: ['bali', 'santorini', 'tokyo']
+                },
+                'maldives': {
+                    title: 'Maldives',
+                    location: 'Maldives',
+                    duration: '5-10 days',
+                    rating: 4.5,
+                    price: '$2,499',
+                    banner: 'https://source.unsplash.com/1600x900/?maldives',
+                    description: `
+              <p>The Maldives is a tropical paradise of pristine beaches, turquoise waters, and unparalleled luxury. This island nation in the Indian Ocean is composed of 26 ring-shaped atolls, which are made up of more than 1,000 coral islands.</p>
+              <p>Known for its luxury resorts, many featuring overwater bungalows with direct access to the ocean, the Maldives offers an escape into pure tranquility. The underwater world is equally spectacular, with vibrant coral reefs and abundant marine life including manta rays, sea turtles, and a variety of tropical fish.</p>
+          `,
+                    // Additional data would be included following the same structure
+                    related: ['bali', 'santorini', 'fiji']
+                }
+            };
+
+            // Default to bali if no destination is specified or if specified destination doesn't exist
+            const destination = destinationData[destinationParam] || destinationData['bali'];
+
+            // Set page title
+            document.title = `${destination.title} - Wanderlust`;
+
+            // Update page elements with destination data
+            document.getElementById('destination-banner').style.backgroundImage = `url(${destination.banner})`;
+            document.getElementById('destination-title').textContent = destination.title;
+            document.getElementById('destination-location').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${destination.location}`;
+            document.getElementById('destination-duration').innerHTML = `<i class="fas fa-calendar-alt"></i> ${destination.duration}`;
+            document.getElementById('destination-description').innerHTML = destination.description;
+            document.getElementById('destination-price').textContent = destination.price;
+
+            // Generate features
+            const featuresContainer = document.getElementById('overview-features');
+            featuresContainer.innerHTML = '';
+            destination.features.forEach(feature => {
+                featuresContainer.innerHTML += `
+          <div class="overview-feature">
+              <i class="fas fa-${feature.icon}"></i>
+              <span>${feature.text}</span>
+          </div>
+      `;
+            });
+
+            // Generate weather info
+            const weatherContainer = document.getElementById('weather-info');
+            weatherContainer.innerHTML = '';
+            destination.weather.forEach(season => {
+                weatherContainer.innerHTML += `
+          <div class="weather-season">
+              <div class="season-name">${season.month}</div>
+              <div class="season-details">
+                  <div class="temp"><i class="fas fa-thermometer-half"></i> ${season.temp}</div>
+                  <div class="rain"><i class="fas fa-cloud-rain"></i> ${season.rain}</div>
+              </div>
+          </div>
+      `;
+            });
+
+            // Generate itinerary
+            const itineraryContainer = document.getElementById('itinerary-container');
+            itineraryContainer.innerHTML = '';
+            destination.itinerary.forEach((item, index) => {
+                itineraryContainer.innerHTML += `
+          <div class="itinerary-item ${index % 2 === 0 ? '' : 'reverse'}">
+              <div class="itinerary-image" style="background-image: url('${item.image}');"></div>
+              <div class="itinerary-content">
+                  <div class="itinerary-day">${item.day}</div>
+                  <h3>${item.title}</h3>
+                  <p>${item.description}</p>
+              </div>
+          </div>
+      `;
+            });
+
+            // Generate highlights if available
+            if (destination.highlights) {
+                const highlightsGrid = document.getElementById('highlights-grid');
+                highlightsGrid.innerHTML = '';
+                destination.highlights.forEach(highlight => {
+                    highlightsGrid.innerHTML += `
+              <div class="highlight-card">
+                  <div class="highlight-image" style="background-image: url('${highlight.image}');"></div>
+                  <div class="highlight-content">
+                      <h3>${highlight.title}</h3>
+                      <p>${highlight.description}</p>
+                  </div>
+              </div>
+          `;
+                });
+            }
+
+            // Generate accommodations if available
+            if (destination.accommodations) {
+                const accommodationsGrid = document.getElementById('accommodations-grid');
+                accommodationsGrid.innerHTML = '';
+                destination.accommodations.forEach(accommodation => {
+                    let ratingStars = '';
+                    for (let i = 1; i <= 5; i++) {
+                        if (i <= Math.floor(accommodation.rating)) {
+                            ratingStars += '<i class="fas fa-star"></i>';
+                        } else if (i - 0.5 <= accommodation.rating) {
+                            ratingStars += '<i class="fas fa-star-half-alt"></i>';
+                        } else {
+                            ratingStars += '<i class="far fa-star"></i>';
+                        }
+                    }
+
+                    accommodationsGrid.innerHTML += `
+              <div class="accommodation-card">
+                  <div class="accommodation-image" style="background-image: url('${accommodation.image}');"></div>
+                  <div class="accommodation-content">
+                      <h3>${accommodation.name}</h3>
+                      <p>${accommodation.description}</p>
+                      <div class="accommodation-meta">
+                          <div class="accommodation-rating">${ratingStars}</div>
+                          <div class="accommodation-price">${accommodation.price}</div>
+                      </div>
+                  </div>
+              </div>
+          `;
+                });
+            }
+
+            // Generate gallery if available
+            if (destination.gallery) {
+                const galleryContainer = document.getElementById('destination-gallery');
+                galleryContainer.innerHTML = '';
+                destination.gallery.forEach(image => {
+                    galleryContainer.innerHTML += `
+              <div class="gallery-item">
+                  <img src="${image}" alt="${destination.title}" >
+              </div>
+          `;
+                });
+            }
+
+            // Generate reviews if available
+            if (destination.reviews) {
+                const reviewsList = document.getElementById('reviews-list');
+                reviewsList.innerHTML = '';
+                destination.reviews.forEach(review => {
+                    let reviewStars = '';
+                    for (let i = 1; i <= 5; i++) {
+                        if (i <= review.rating) {
+                            reviewStars += '<i class="fas fa-star"></i>';
+                        } else {
+                            reviewStars += '<i class="far fa-star"></i>';
+                        }
+                    }
+
+                    reviewsList.innerHTML += `
+              <div class="review-item">
+                  <div class="review-header">
+                      <div class="reviewer-name">${review.name}</div>
+                      <div class="review-date">${review.date}</div>
+                  </div>
+                  <div class="review-rating">${reviewStars}</div>
+                  <div class="review-comment">${review.comment}</div>
+              </div>
+          `;
+                });
+            }
+
+            // Generate related destinations if available
+            if (destination.related) {
+                const relatedContainer = document.getElementById('related-destinations');
+                relatedContainer.innerHTML = '';
+
+                destination.related.forEach(relatedId => {
+                    if (destinationData[relatedId]) {
+                        const related = destinationData[relatedId];
+                        relatedContainer.innerHTML += `
+                  <div class="related-destination-card">
+                      <div class="related-destination-img" style="background-image: url('${related.banner}');"></div>
+                      <div class="related-destination-info">
+                          <h3>${related.title}</h3>
+                          <p>From ${related.price} per person</p>
+                          <a href="destination-detail.html?destination=${relatedId}" class="btn-secondary">View Details</a>
+                      </div>
+                  </div>
+              `;
+                    }
+                });
+            }
+
+            // Tab navigation functionality
+            const tabLinks = document.querySelectorAll('.destination-tabs a');
+            const sections = document.querySelectorAll('.destination-section');
+
+            tabLinks.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Remove active class from all tabs
+                    tabLinks.forEach(tab => tab.classList.remove('active'));
+
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+
+                    // Show the corresponding section
+                    const targetId = this.getAttribute('href').substring(1);
+                    sections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.classList.add('active-section');
+                        } else {
+                            section.classList.remove('active-section');
+                        }
+                    });
+
+                    // Scroll to section
+                    document.getElementById(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+  </body>
+</html>

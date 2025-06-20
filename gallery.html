@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Gallery - Wanderlust</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <svg width="150" height="40" viewBox="0 0 150 40" class="logo-svg">
+              <text
+                x="0"
+                y="25"
+                font-family="Arial"
+                font-size="24"
+                font-weight="bold"
+                fill="#3498db"
+              >
+                Wanderlust
+              </text>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="page-banner"
+      style="background-image: url('assets/images/travel.jpg')"
+    >
+      <div class="banner-content">
+        <h1>Travel Photo Gallery</h1>
+        <p>Stunning images from around the world</p>
+      </div>
+    </section>
+
+    <section class="gallery-filters">
+      <div class="container">
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">
+            All Photos
+          </button>
+          <button class="filter-btn" data-filter="beaches">Beaches</button>
+          <button class="filter-btn" data-filter="mountains">Mountains</button>
+          <button class="filter-btn" data-filter="cities">Cities</button>
+          <button class="filter-btn" data-filter="landmarks">Landmarks</button>
+          <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+          <button class="filter-btn" data-filter="food">Food & Cuisine</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-content">
+      <div class="container">
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Beaches -->
+          <div class="gallery-item" data-category="beaches">
+            <div class="gallery-image">
+              <img src="assets/images/maldives.jpg" loading="lazy" />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Pristine Shores</h3>
+                  <p>Maldives</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/maldives.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="beaches">
+            <div class="gallery-image">
+              <img
+                src="assets/images/bali.jpg"
+                alt="Bali Beach"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Tropical Paradise</h3>
+                  <p>Bali, Indonesia</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/bali.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="beaches">
+            <div class="gallery-image">
+              <img
+                src="assets/images/hawaii.jpg"
+                alt="Hawaii Beach"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Hawaiian Shores</h3>
+                  <p>Maui, Hawaii</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/hawaii.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mountains -->
+          <div class="gallery-item" data-category="mountains">
+            <div class="gallery-image">
+              <img
+                src="assets/images/alps.jpg"
+                alt="Swiss Alps"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Majestic Alps</h3>
+                  <p>Switzerland</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/alps.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="mountains">
+            <div class="gallery-image">
+              <img
+                src="assets/images/everest.jpg"
+                alt="Mount Everest"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Roof of the World</h3>
+                  <p>Mount Everest, Nepal</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/everest.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="mountains">
+            <div class="gallery-image">
+              <img
+                src="assets/images/patagonia.jpg"
+                alt="Patagonia"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Patagonian Peaks</h3>
+                  <p>Patagonia, Argentina</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/patagonia.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cities -->
+          <div class="gallery-item" data-category="cities">
+            <div class="gallery-image">
+              <img src="assets/images/tokyo.jpg" alt="Tokyo" loading="lazy" />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Tokyo Skyline</h3>
+                  <p>Japan</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/tokyo.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="cities">
+            <div class="gallery-image">
+              <img
+                src="assets/images/new-york.jpg"
+                alt="New York"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>City That Never Sleeps</h3>
+                  <p>New York, USA</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/new-york.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="cities">
+            <div class="gallery-image">
+              <img src="assets/images/paris.jpg" alt="Paris" loading="lazy" />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>City of Lights</h3>
+                  <p>Paris, France</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/paris.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Landmarks -->
+          <div class="gallery-item" data-category="landmarks">
+            <div class="gallery-image">
+              <img src="assets/images/taj.jpg" alt="Taj Mahal" loading="lazy" />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Taj Mahal</h3>
+                  <p>Agra, India</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/taj.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="landmarks">
+            <div class="gallery-image">
+              <img
+                src="assets/images/china.jpg"
+                alt="Great Wall of China"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Great Wall</h3>
+                  <p>China</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/china.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="landmarks">
+            <div class="gallery-image">
+              <img
+                src="assets/images/machu.jpg"
+                alt="Machu Picchu"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Machu Picchu</h3>
+                  <p>Peru</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/machu.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wildlife -->
+          <div class="gallery-item" data-category="wildlife">
+            <div class="gallery-image">
+              <img
+                src="assets/images/Serengeti.jpg"
+                alt="African Safari"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>African Wildlife</h3>
+                  <p>Serengeti, Tanzania</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/Serengeti.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="wildlife">
+            <div class="gallery-image">
+              <img
+                src="assets/images/galapagos.jpg"
+                alt="Galapagos Islands"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Galapagos Wildlife</h3>
+                  <p>Ecuador</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/galapagos.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="wildlife">
+            <div class="gallery-image">
+              <img
+                src="assets/images/polar-bear.jpg"
+                alt="Polar Bear"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Arctic Wildlife</h3>
+                  <p>Svalbard, Norway</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/polar-bear.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Food -->
+          <div class="gallery-item" data-category="food">
+            <div class="gallery-image">
+              <img
+                src="assets/images/italian.jpg"
+                alt="Italian Food"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Italian Cuisine</h3>
+                  <p>Italy</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/italian.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="food">
+            <div class="gallery-image">
+              <img
+                src="assets/images/japanese.jpg"
+                alt="Japanese Food"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Japanese Delicacies</h3>
+                  <p>Japan</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/japanese.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="food">
+            <div class="gallery-image">
+              <img
+                src="assets/images/indian.jpg"
+                alt="Indian Food"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="overlay-content">
+                  <h3>Indian Cuisine</h3>
+                  <p>India</p>
+                  <button
+                    class="view-image-btn"
+                    data-img="assets/images/indian.jpg"
+                  >
+                    View Full Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Image Modal -->
+    <div class="image-modal" id="image-modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modal-image" />
+      <div class="modal-caption" id="modal-caption"></div>
+    </div>
+
+    <section class="submit-photos">
+      <div class="container">
+        <div class="submit-photos-content">
+          <h2>Share Your Travel Photos</h2>
+          <p>
+            Have amazing travel photos? Share them with our community and get
+            featured in our gallery.
+          </p>
+          <a href="contact.html" class="btn-primary">Submit Your Photos</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <svg width="150" height="40" viewBox="0 0 150 40">
+                <text
+                  x="0"
+                  y="25"
+                  font-family="Arial"
+                  font-size="24"
+                  font-weight="bold"
+                  fill="#3498db"
+                >
+                  Wanderlust
+                </text>
+              </svg>
+            </div>
+            <p>
+              Exploring the world's most breathtaking destinations since 2010.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Destinations</h3>
+            <ul>
+              <li>
+                <a href="destination-detail.html?destination=bali"
+                  >Bali, Indonesia</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=santorini"
+                  >Santorini, Greece</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=kyoto"
+                  >Kyoto, Japan</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=maldives"
+                  >Maldives</a
+                >
+              </li>
+              <li><a href="destinations.html">View All</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Travel Street, City,
+                Country
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@wanderlust.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

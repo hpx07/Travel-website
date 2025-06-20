@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Wanderlust</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <svg width="150" height="40" viewBox="0 0 150 40" class="logo-svg">
+              <text
+                x="0"
+                y="25"
+                font-family="Arial"
+                font-size="24"
+                font-weight="bold"
+                fill="#3498db"
+              >
+                Wanderlust
+              </text>
+            </svg>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="page-banner"
+      style="background-image: url('assets/images/trip2.jpg')"
+    >
+      <div class="banner-content">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our travel experts</p>
+      </div>
+    </section>
+
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <div class="icon-container">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>info@wanderlust.com</p>
+            <p>bookings@wanderlust.com</p>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon-container">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>+1 (555) 123-4567</p>
+            <p>Mon-Fri: 9am-6pm</p>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon-container">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visit Us</h3>
+            <p>123 Travel Street</p>
+            <p>City, Country, 12345</p>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon-container">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Live Chat</h3>
+            <p>Available 24/7</p>
+            <a href="#" class="btn-small">Start Chat</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <p>
+              Fill out the form below and one of our travel experts will get
+              back to you within 24 hours.
+            </p>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name*</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="inquiry-type">Inquiry Type*</label>
+                <select id="inquiry-type" name="inquiry-type" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="booking">Trip Booking</option>
+                  <option value="information">Destination Information</option>
+                  <option value="custom">Custom Itinerary</option>
+                  <option value="group">Group Travel</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="destination">Desired Destination(s)</label>
+                <input type="text" id="destination" name="destination" />
+              </div>
+              <div class="form-group">
+                <label for="travel-date">Planned Travel Date</label>
+                <input type="date" id="travel-date" name="travel-date" />
+              </div>
+              <div class="form-group full-width">
+                <label for="message">Your Message*</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group full-width">
+                <label class="checkbox-container">
+                  <input type="checkbox" name="newsletter" id="newsletter" />
+                  <span class="checkmark"></span>
+                  Subscribe to our newsletter for travel tips and exclusive
+                  offers
+                </label>
+              </div>
+              <div class="form-group full-width">
+                <button type="submit" class="btn-primary">Send Message</button>
+              </div>
+            </form>
+            <div
+              id="form-success"
+              class="form-success-message"
+              style="display: none"
+            >
+              <i class="fas fa-check-circle"></i>
+              <h3>Thank You!</h3>
+              <p>
+                Your message has been sent successfully. One of our travel
+                experts will get back to you shortly.
+              </p>
+            </div>
+          </div>
+          <div class="contact-aside">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986432970718!3d40.69714940704889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1630619796867!5m2!1sen!2s"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="business-hours">
+              <h3>Business Hours</h3>
+              <ul>
+                <li><span>Monday - Friday:</span> 9:00 AM - 6:00 PM</li>
+                <li><span>Saturday:</span> 10:00 AM - 4:00 PM</li>
+                <li><span>Sunday:</span> Closed</li>
+              </ul>
+            </div>
+            <div class="social-contact">
+              <h3>Connect With Us</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-pinterest"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-options">
+      <div class="container">
+        <h2 class="section-title">How We Can Help You</h2>
+        <div class="booking-options-grid">
+          <div class="booking-option-card">
+            <div class="option-icon">
+              <i class="fas fa-suitcase"></i>
+            </div>
+            <h3>Plan Your Trip</h3>
+            <p>
+              Let our travel experts help you plan the perfect itinerary based
+              on your interests and budget.
+            </p>
+          </div>
+          <div class="booking-option-card">
+            <div class="option-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Group Travel</h3>
+            <p>
+              Special arrangements for family reunions, corporate retreats, or
+              friends traveling together.
+            </p>
+          </div>
+          <div class="booking-option-card">
+            <div class="option-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Luxury Experiences</h3>
+            <p>
+              Exclusive access to high-end resorts, private tours, and VIP
+              experiences around the world.
+            </p>
+          </div>
+          <div class="booking-option-card">
+            <div class="option-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h3>Adventure Travel</h3>
+            <p>
+              Thrilling expeditions and outdoor activities for adventurous
+              travelers seeking new challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How far in advance should I book my trip?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                For popular destinations or travel during peak seasons (summer,
+                holidays), we recommend booking 3-6 months in advance. For less
+                crowded destinations or off-peak travel, 1-3 months is usually
+                sufficient. Last-minute bookings can sometimes be accommodated
+                but may have limited options and higher prices.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What payment methods do you accept?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We accept all major credit cards (Visa, MasterCard, American
+                Express), PayPal, bank transfers, and in some cases,
+                cryptocurrencies. A deposit is typically required to secure your
+                booking, with the balance due 30-60 days before your travel
+                date, depending on the destination.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you offer travel insurance?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we strongly recommend travel insurance for all trips. We
+                can arrange comprehensive coverage that includes trip
+                cancellation/interruption, medical emergencies, baggage loss,
+                and more. Our travel experts can help you choose the right
+                policy based on your specific needs and destination.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What if I need to cancel or change my trip?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our standard cancellation policy varies by destination and
+                package. Generally, cancellations made 60+ days before departure
+                receive a full refund minus a small administrative fee.
+                Cancellations 30-59 days before departure typically incur a 50%
+                fee, while those made less than 30 days before departure are
+                usually non-refundable. Trip changes can often be accommodated,
+                though fees may apply depending on the circumstances.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you arrange transportation to and from the airport?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, airport transfers can be included in your package. We offer
+                private transfers, shared shuttles, or guidance on public
+                transportation options depending on your budget and preferences.
+                Just let us know your flight details, and we'll ensure smooth
+                transitions between the airport and your accommodation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>
+            Get exclusive travel deals, insider tips, and travel inspiration
+            delivered straight to your inbox.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <svg width="150" height="40" viewBox="0 0 150 40">
+                <text
+                  x="0"
+                  y="25"
+                  font-family="Arial"
+                  font-size="24"
+                  font-weight="bold"
+                  fill="#3498db"
+                >
+                  Wanderlust
+                </text>
+              </svg>
+            </div>
+            <p>
+              Exploring the world's most breathtaking destinations since 2010.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Destinations</h3>
+            <ul>
+              <li>
+                <a href="destination-detail.html?destination=bali"
+                  >Bali, Indonesia</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=santorini"
+                  >Santorini, Greece</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=kyoto"
+                  >Kyoto, Japan</a
+                >
+              </li>
+              <li>
+                <a href="destination-detail.html?destination=maldives"
+                  >Maldives</a
+                >
+              </li>
+              <li><a href="destinations.html">View All</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Travel Street, City,
+                Country
+              </li>
+              <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@wanderlust.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Contact Form Submission
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contact-form");
+        const formSuccess = document.getElementById("form-success");
+
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // In a real implementation, you would send the form data to a server
+            // This is a simple simulation for demonstration purposes
+
+            // Form validation
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+            const inquiryType = document.getElementById("inquiry-type").value;
+
+            if (!name || !email || !message || !inquiryType) {
+              alert("Please fill in all required fields.");
+              return;
+            }
+
+            // Hide form and show success message
+            contactForm.style.display = "none";
+            formSuccess.style.display = "block";
+
+            // Reset form (if needed later)
+            contactForm.reset();
+
+            // In a real implementation, you would have code like this:
+            /*
+                            fetch('your-api-endpoint', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({
+                                    name: name,
+                                    email: email,
+                                    phone: document.getElementById('phone').value,
+                                    inquiryType: inquiryType,
+                                    destination: document.getElementById('destination').value,
+                                    travelDate: document.getElementById('travel-date').value,
+                                    message: message,
+                                    newsletter: document.getElementById('newsletter').checked
+                                })
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                // Handle success
+                                contactForm.style.display = 'none';
+                                formSuccess.style.display = 'block';
+                            })
+                            .catch(error => {
+                                // Handle error
+                                console.error('Error:', error);
+                                alert('There was an error submitting your form. Please try again.');
+                            });
+                            */
+          });
+        }
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll(".faq-question");
+
+        faqQuestions.forEach((question) => {
+          question.addEventListener("click", function () {
+            const faqItem = this.parentElement;
+            const isActive = faqItem.classList.contains("active");
+
+            // Close all FAQ items
+            document.querySelectorAll(".faq-item").forEach((item) => {
+              item.classList.remove("active");
+            });
+
+            // If the clicked item wasn't active, make it active
+            if (!isActive) {
+              faqItem.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
