@@ -1,29 +1,51 @@
-<h1>Main Project 1</h1>
+# 🌍 Travel Website ![Build](https://img.shields.io/badge/status-in%20progress-yellow) ![HTML](https://img.shields.io/badge/built%20with-HTML5-orange) ![CSS](https://img.shields.io/badge/styling-CSS3-blue) ![JavaScript](https://img.shields.io/badge/script-JavaScript-yellow)
 
+A responsive, animated **Travel Website** built with HTML, CSS, and JavaScript — perfect for showcasing destinations and travel services.
 
-<h2> 🌍 Travel Website ✈️ </h2>
-
-A fully responsive and visually appealing **Travel Website** built using **HTML**, **CSS**, and **JavaScript**.  
-This project showcases beautiful destinations, smooth navigation, and a modern layout — ideal for a personal portfolio or landing page project.
-
-> Created by [@hpx07](https://github.com/hpx07)
-> Project is live at - https://hpx07.github.io/Travel-website/
 ---
 
-## 🚀 Features
+## 🌐 Features
 
-- 🌐 Responsive design for mobile and desktop
-- 🎨 Clean, custom styling with CSS
-- 🧭 Smooth scrolling and interactive elements with JavaScript
-- 📸 Sections for destinations, services, and contact
+- 📱 Fully responsive layout
+- 🎨 Stylish sections and visual appeal
+- 🧭 Navigation and scroll-based effects
+- 🗺️ Showcase destinations and experiences
 
 ---
 
 ## 📂 Project Structure
 
-Travel-website/ <br>
-├── index.html <br>
-├── style.css <br>
-├── script.js <br>
-└── assets/ <br>
-└── images/ <br>
+```plaintext
+Travel-website/
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+    └── images/
+```
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+git clone https://github.com/hpx07/Travel-website.git
+cd Travel-website
+start index.html
+```
+
+Or simply double-click `index.html`.
+
+---
+
+## 🌍 Live Demo
+
+🔗 [GitHub Pages Link](https://hpx07.github.io/Travel-website/)
+
+---
+
+## 👤 Author
+
+**GitHub:** [@hpx07](https://github.com/hpx07)
+
+---
