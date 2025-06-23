@@ -44,7 +44,7 @@ Or simply double-click `index.html`.
 
 ---
 
-## 👤 Author
+## 🙋 Author
 
 **GitHub:** [@hpx07](https://github.com/hpx07)
 
