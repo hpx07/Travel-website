@@ -21,9 +21,9 @@ This project showcases beautiful destinations, smooth navigation, and a modern l
 
 ## 📂 Project Structure
 
-Travel-website/
-├── index.html
-├── style.css
-├── script.js
-└── assets/
-└── images/
+Travel-website/ <br>
+├── index.html <br>
+├── style.css <br>
+├── script.js <br>
+└── assets/ <br>
+└── images/ <br>
